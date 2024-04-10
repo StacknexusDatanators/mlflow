@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/627823031961911570/fb916a783de6477fbb9b76d82c198f8f/artifacts
+end_time: 1712669646015
+entry_point_name: ''
+experiment_id: '627823031961911570'
+lifecycle_stage: active
+run_id: fb916a783de6477fbb9b76d82c198f8f
+run_name: dapper-shrike-290
+run_uuid: fb916a783de6477fbb9b76d82c198f8f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712669644296
+status: 3
+tags: []
+user_id: astrobalaji

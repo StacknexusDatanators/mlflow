@@ -1,0 +1,22 @@
+version: v1
+name: mlflow-test
+type: service
+service:
+  title:  Test of ML flow as a ML model repository for stewardship
+  replicas: 1
+  servicePort: 5000
+  ingress:
+    enabled: true
+    noAuthentication: true
+    path: /mlflow
+    stripPath: true
+  stack: alpha
+  compute: runnable-default
+  envs:
+    LOG_LEVEL: info
+  alpha:
+    command:
+      - "mlflow"
+    arguments:
+      - "server --host 0.0.0.0 --port 5000"
+    image: sndatanator/mlflow-test:v0.1
